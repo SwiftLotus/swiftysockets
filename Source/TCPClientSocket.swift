@@ -157,7 +157,7 @@ extension TCPClientSocket {
         try send(&data, length: data.count)
     }
 
-    public func send(inout data: [Int8]) throws {
+    public func send(data: inout [Int8]) throws {
         try send(&data, length: data.count)
     }
 
