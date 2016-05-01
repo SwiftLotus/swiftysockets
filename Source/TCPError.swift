@@ -25,7 +25,7 @@
 import Tide
 import Glibc
 
-public struct TCPError : ErrorType, CustomStringConvertible {
+public struct TCPError : ErrorProtocol, CustomStringConvertible {
     public let description: String
     public let bytesProcessed: Int?
 
